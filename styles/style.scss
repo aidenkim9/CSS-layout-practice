@@ -1,0 +1,68 @@
+body {
+  background-color: black;
+}
+
+.header__list {
+  display: flex;
+  column-gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  .header__list-item {
+    color: white;
+    list-style-type: none;
+    border: 0.1px solid white;
+    border-radius: 25px;
+    padding: 7px;
+  }
+}
+
+.cards {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  .card {
+    border-radius: 20px;
+    padding: 5px 15px;
+    &:first-child {
+      color: white;
+      background-color: #292d33;
+      border: 0.6px solid white;
+    }
+    &:nth-child(2) {
+      background-color: white;
+    }
+    &:nth-child(3) {
+      background-color: #fafebe;
+      grid-column: span 2;
+    }
+    &:nth-child(4) {
+      background-color: #b5a3f7;
+    }
+    &:nth-child(5) {
+      background-color: #fed4d4;
+    }
+    &:nth-child(6) {
+      background-color: #cfffdc;
+      grid-column: span 2;
+    }
+    .card__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .price {
+        color: black;
+        background-color: #ffdd2d;
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 15px;
+      }
+      .month {
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        padding: 5px;
+        border-radius: 30px;
+      }
+    }
+  }
+}
