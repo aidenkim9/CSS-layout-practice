@@ -1,67 +1,103 @@
+@import "./reset.scss";
+
 body {
-  background-color: black;
+  background-color: #dce6d1;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.header__list {
-  display: flex;
-  column-gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
-  .header__list-item {
+.phone {
+  background-color: black;
+  border-radius: 40px;
+  height: 95%;
+  width: 420px;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  overflow-x: scroll;
+  .header__list {
+    display: flex;
     color: white;
-    list-style-type: none;
-    border: 0.1px solid white;
-    border-radius: 25px;
-    padding: 7px;
+    gap: 10px;
+    width: max-content;
+    .header__list-item {
+      font-size: 14px;
+      border: 1px solid rgba($color: white, $alpha: 0.5);
+      border-radius: 20px;
+      padding: 10px;
+    }
+    .header__list-item--inverted {
+      background-color: white;
+      color: black;
+    }
   }
 }
 
 .cards {
+  margin: 20px 0px;
   display: grid;
-  gap: 10px;
   grid-template-columns: repeat(2, 1fr);
-  .card {
-    border-radius: 20px;
-    padding: 5px 15px;
+  gap: 12px;
+  overflow-y: scroll;
+  height: 95%;
+  .cards__card {
+    background-color: white;
+    padding: 15px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
     &:first-child {
-      color: white;
       background-color: #292d33;
-      border: 0.6px solid white;
+      border: 0.2px solid white;
+      .card__title {
+        color: white;
+      }
     }
     &:nth-child(2) {
-      background-color: white;
+      background-color: #f5f4ef;
     }
     &:nth-child(3) {
-      background-color: #fafebe;
-      grid-column: span 2;
+      background-color: #f8fcb5;
     }
     &:nth-child(4) {
-      background-color: #b5a3f7;
+      background-color: #b19ff6;
     }
     &:nth-child(5) {
-      background-color: #fed4d4;
+      background-color: #fed3d3;
     }
     &:nth-child(6) {
-      background-color: #cfffdc;
+      background-color: #d0fedf;
+    }
+    &:nth-child(7) {
+      background-color: #f8fcb5;
+    }
+    &:nth-child(3n) {
       grid-column: span 2;
     }
+    .card__title {
+      font-size: 24px;
+    }
     .card__footer {
+      font-size: 12px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      .price {
-        color: black;
-        background-color: #ffdd2d;
+      span {
         border: 1px solid black;
-        padding: 5px;
-        border-radius: 15px;
+        border-radius: 20px;
+        padding: 10px;
       }
-      .month {
-        color: black;
+      .card__price {
+        background-color: rgb(255, 221, 44);
+      }
+      .card__length {
         background-color: white;
-        border: 1px solid black;
-        padding: 5px;
-        border-radius: 30px;
       }
     }
   }
