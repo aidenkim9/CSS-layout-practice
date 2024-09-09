@@ -5,70 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Layout Master Class</title>
     <link rel="stylesheet" href="./styles/style.scss" />
+
     <script
       src="https://kit.fontawesome.com/54a5b9e555.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <div class="phone">
-      <header class="header">
-        <span class="header__btn">⬅</span>
-        <h1 class="header__title">MY CART</h1>
-        <span class="header__btn">🛒</span>
-      </header>
-      <section class="total">
-        <span class="total__price">€3550</span
-        ><span class="total__subtitle">based on your 5 items</span>
-      </section>
-      <article class="items">
-        <div class="item">
-          <div class="item__info">
-            <div class="item__info-col">
-              <h1 class="item_title">POP TEMPLE PRINT T-SHIRT</h1>
-              <h4 class="item_subtitle">versace limited 2021</h4>
+    <header class="header">
+      <nav class="header__nav">
+        <ul>
+          <li class="header__tab">≡</li>
+          <li class="header__tab">Best Sellers</li>
+          <li class="header__tab">Hand Sanitizer</li>
+          <li class="header__tab">Hand Cream</li>
+          <li class="header__tab">Refills</li>
+          <li class="header__tab">HAAN</li>
+          <li class="header__tab">Toothpaste</li>
+          <li class="header__tab">Hand Soap</li>
+          <li class="header__tab">Combos</li>
+          <li class="header__tab">😀</li>
+          <li class="header__tab">🛍️</li>
+        </ul>
+      </nav>
+      <div class="header__breadcrumbs">
+        <span class="header__crumb">Home / </span>
+        <span class="header__crumb">Catalog / </span>
+        <span class="header__crumb">Hand Soap / </span>
+        <span class="header__crumb">Sunset Fleur</span>
+      </div>
+    </header>
+    <div class="product">
+      <div class="product__img"></div>
+      <div class="product__info">
+        <div class="product__header">
+          <span class="product__category">HAND SOAP</span>
+          <h1 class="product__title">SUNSET FLEUR</h1>
+          <div class="product__add-to-cart">
+            <div class="product__qty">
+              <span class="product__minus">-</span
+              ><span class="product__count">1</span>
+              <span class="product__plus">+</span>
             </div>
-            <div class="item__info-col">
-              <h1 class="item__total-price">€1990</h1>
-              <h4 class="item__per-price">€ 995 per piece</h4>
-            </div>
+            <span class="product__price">11,90€</span
+            ><span class="product__add-cart">add to cart</span>
           </div>
-          <div class="item__specs">
-            <div class="spec">
-              <span class="spec__title">SIZE</span>
-              <span class="spec__value">48 - L</span>
-            </div>
-            <div class="spec">
-              <span class="spec__title">QT</span>
-              <span class="spec__value">2 pcs</span>
-            </div>
-          </div>
-          <img src=" https://picsum.photos/200/300" class="item__photo" />
         </div>
-        <div class="item">
-          <div class="item__info">
-            <div class="item__info-col">
-              <h1 class="item_title">POP TEMPLE PRINT T-SHIRT</h1>
-              <h4 class="item_subtitle">versace limited 2021</h4>
-            </div>
-            <div class="item__info-col">
-              <h1 class="item__total-price">€1990</h1>
-              <h4 class="item__per-price">€ 995 per piece</h4>
+        <div class="product__footer">
+          <div class="product__description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
+              deleniti laboriosam iusto dolorum explicabo. Eveniet voluptas,
+              voluptate itaque vitae, quibusdam natus labore neque ipsa,
+              voluptates magnam aliquam in totam necessitatibus?
+            </p>
+          </div>
+          <div class="product__faq">
+            <div class="product__question">HOW TO USE <span>+</span></div>
+            <div class="product__question">INGREDIENTS <span>+</span></div>
+            <div class="product__question">
+              SHIPPING & PAYMENT <span>+</span>
             </div>
           </div>
-          <div class="item__specs">
-            <div class="spec">
-              <span class="spec__title">SIZE</span>
-              <span class="spec__value">48 - L</span>
-            </div>
-            <div class="spec">
-              <span class="spec__title">QT</span>
-              <span class="spec__value">2 pcs</span>
-            </div>
-          </div>
-          <img src=" https://picsum.photos/200/300" class="item__photo" />
         </div>
-      </article>
+      </div>
     </div>
   </body>
 </html>
